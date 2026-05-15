@@ -82,14 +82,6 @@ export default function StoryDetailPage() {
 
     let updatedText = text;
 
-    // story.variables.forEach((variable) => {
-    //   const regex = new RegExp(`\\{${variable.key}\\}`, "g");
-    //   updatedText = updatedText.replace(
-    //     regex,
-    //     variable.default_value || ""
-    //   );
-    // });
-
     Object.keys(variableValues).forEach((key) => {
         const regex = new RegExp(`\\{${key}\\}`, "g");
         updatedText = updatedText.replace(regex, variableValues[key] || "");

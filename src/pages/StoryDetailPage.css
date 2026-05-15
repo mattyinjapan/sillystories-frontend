@@ -44,12 +44,13 @@
 .story-detail-page .story-text-half {
   flex: 1;
   font-size: 1.15rem;
+  max-width: 50%;
   line-height: 1.8;
 }
 
 .story-detail-page .story-image-half {
   flex: 1;
-  max-width: 100%;
+  max-width: 50%;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
